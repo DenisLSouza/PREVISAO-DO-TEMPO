@@ -7,6 +7,9 @@ function colocarDadosNaTela(dados){
     document.querySelector(".temp").innerHTML = Math.floor (dados.main.temp) + "°C"
     document.querySelector(".texto-previsao").innerHTML = dados.weather[0].description
     document.querySelector(".umidade").innerHTML = dados.main.humidity + "%"
+    document.querySelector(".Vento").innerHTML = dados.main.humidity + "KM/h"
+    document.querySelector(".Pressao").innerHTML = dados.main.pressure + "hPa"
+    document.querySelector(".Visibilidade").innerHTML = dados.visibility + "km"
 }
 
 async function buscarCidade(cidade){
