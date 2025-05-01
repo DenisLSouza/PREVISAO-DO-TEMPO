@@ -20,8 +20,10 @@ body {
     opacity: 0.8;
     border-radius: 25px;
     padding: 20px;
-    width: 95%;
+    width: 150%;
+    height:auto;
     max-width: 450px;
+        
 
 }
 
@@ -41,7 +43,7 @@ body {
     outline: none;
     padding: 10px;
     border-radius: 50px;
-    background-color: #7c7c7c2b;
+    background-color: #04db21;
     cursor: pointer;
     float: right;
 
@@ -53,6 +55,8 @@ body {
 
 .caixa-media {
     margin-top: 30px;
+    width: 100%;
+    
 }
 
 .cidade {
@@ -73,6 +77,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 20px;
+       
 
 }
 
@@ -97,13 +102,26 @@ body {
 .Pressao {
     color: #ffffff;
     margin-top: 20px;
-
+   
 }
 .Visibilidade {
     color: #ffffff;
     margin-top: 20px;
 
 }
+
+.rodape {
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'open-sans', sans-serif;   
+}
+
+
 
 
 

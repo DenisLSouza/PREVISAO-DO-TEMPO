@@ -4,12 +4,13 @@ const key = "5e4c5a00268637af19fefdb0db408450"
 
 function colocarDadosNaTela(dados){
     document.querySelector(".cidade").innerHTML = "Tempo em " + dados.name
-    document.querySelector(".temp").innerHTML = Math.floor (dados.main.temp) + "°C"
+    document.querySelector(".temp").innerHTML = Math.floor (dados.main.temp) +"°C"
+    document.querySelector(".temp").innerHTML = Math.floor (dados.winter.visibility)
     document.querySelector(".texto-previsao").innerHTML = dados.weather[0].description
-    document.querySelector(".umidade").innerHTML = dados.main.humidity + "%"
-    document.querySelector(".Vento").innerHTML = dados.main.humidity + "KM/h"
-    document.querySelector(".Pressao").innerHTML = dados.main.pressure + "hPa"
-    document.querySelector(".Visibilidade").innerHTML = dados.visibility + "km"
+    document.querySelector(".umidade").innerHTML = dados.main.humidity +"%"
+    document.querySelector(".Vento").innerHTML = dados.wind.speed +"KM/h"
+    document.querySelector(".Pressao").innerHTML = dados.main.pressure +"hPa"
+    document.querySelector(".Visibilidade").innerHTML = visibility +"km"
 }
 
 async function buscarCidade(cidade){
